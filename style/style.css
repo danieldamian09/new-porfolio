@@ -46,7 +46,7 @@
   padding-left: 1.5rem;
 }
 
-.navbar__items a{
+.navbar__items ul li a{
   text-decoration: none;
   color: #000;
 }
@@ -54,3 +54,21 @@
 .navbar__cta{
   padding: 0 1.8rem 0 1.5rem;
 }
+
+.navbar__cta__enlace{
+  width: 160px;
+  height: 50px;
+  background: #5A6D79;
+  padding: 14px 49px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.3s cubic-bezier(0.65, 0.39, 0.5, 1.63);
+}
+
+.navbar__cta__enlace:hover{
+  background-color: #5a6d7978;
+  box-shadow: 0 1px 13px 7px rgb(146 161 176 / 15%);
+  transform: translateY(-4px);
+}
+
