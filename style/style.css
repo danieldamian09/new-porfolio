@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   background: #fff;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
 }
 
 
@@ -51,18 +52,18 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 0%;
+  height: 0vh;
   top: 35px;
   left: 0;
   text-align: center;
-  background: rgba(90,109,121,1);
+  background: rgba(90, 109, 121, 1);
   transition: all .5s;
 }
 
 .navbar__items {
   display: block;
   line-height: 30px;
-  margin: 50px 0px;
+  margin: 30px 0px;
   list-style: none;
   padding-left: 1.5rem;
 }
@@ -88,7 +89,7 @@ body {
 }
 
 .check:checked~.navbar-items_list {
-  height: 100%;
+  height: 100vh;
 }
 
 .check:checked~.navbar-items_list a {
@@ -103,7 +104,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 180px;
+  margin-top: 11.25rem;
 }
 
 .intro {
@@ -148,7 +149,7 @@ body {
 
 /* ---------------------------------------------Media Query----------------------------------------------- */
 /* Desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .logo {
     margin-left: 50px;
   }
@@ -194,7 +195,7 @@ body {
     border-radius: 10px;
   }
 
-  .navbar__items ul li a.active{
+  .navbar__items ul li a.active {
     color: #fff;
   }
 
@@ -204,21 +205,62 @@ body {
 /* Tablet */
 @media screen and (max-width: 768px) {
 
-  .navbar{
-    height: 50px;
+  .navbar {
+    height: 60px;
   }
+  
 
   .hero {
     flex-direction: column-reverse;
+    margin-top: 8rem;
+  }
+
+  .intro{
+    width: 80%;
+  }
+
+  .hero__title{
+    font-size: 2rem;
+  }
+
+
+  .foto img{
+    width: 220px;
+  }
+
+  .about__title{
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .about__container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 95%;
+  }
+
+  .about__img{
+    width: 100%;
+    height: auto;
+  }
+
+  .about__img img{
+    width: 80%;
+    height: auto;
   }
 
   .about__text {
+    width: 95%;
     margin-top: 2rem;
   }
+
+  .about__text p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  
 }
