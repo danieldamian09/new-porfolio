@@ -15,6 +15,10 @@ body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
   width: 100%;
+  color: #000;
+  /* dark */
+  /* background: #202124;
+  color: #fff; */
 }
 
 
@@ -31,6 +35,8 @@ body {
   right: 0;
   left: 0;
   z-index: 2;
+  /* dark */
+  /* background-color: #5A6D79; */
 }
 
 .logo {
@@ -63,7 +69,7 @@ body {
 .navbar__items {
   display: block;
   line-height: 30px;
-  margin: 30px 0px;
+  margin: 30px 20px;
   list-style: none;
   padding-left: 1.5rem;
 }
@@ -73,7 +79,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
-  color: #fff;
   display: none;
 }
 
@@ -104,7 +109,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 11.25rem;
+  margin-top: 12.25rem;
 }
 
 .intro {
@@ -116,7 +121,7 @@ body {
 }
 
 .about {
-  margin-top: 7.5rem;
+  margin-top: 16rem;
 }
 
 .about__title {
@@ -146,9 +151,20 @@ body {
 
 .about__text {
   width: 485px;
-
 }
 
+.about__text p {
+  line-height: 22px;
+}
+
+.about__competencies ul li{
+  line-height: 30px;
+}
+
+.about__text p span{
+  color: #9BD4D6;
+  font-weight: bold;
+}
 /* ---------------------------------------------Media Query----------------------------------------------- */
 /* Desktop */
 @media screen and (min-width: 769px) {
@@ -187,6 +203,8 @@ body {
   .navbar__items ul li a {
     color: #000;
     display: block;
+    /* dark */
+    /* color: #fff; */
   }
 
   /* clase para el cta en desktop */
@@ -195,6 +213,8 @@ body {
     padding: 0px 50px;
     text-decoration: none;
     border-radius: 10px;
+    /* dark */
+    /* background: #9BD4D6; */
   }
 
   .navbar__items ul li a.active {
@@ -209,6 +229,10 @@ body {
 
   .navbar {
     height: 60px;
+  }
+
+  .navbar__items ul li a {
+    color: #fff;
   }
   
 
@@ -263,7 +287,7 @@ body {
   }
 
   .about__text p{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .works{
