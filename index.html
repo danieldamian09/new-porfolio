@@ -11,18 +11,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3fdbeea8dd.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
   <nav class="navbar">
     <div class="navbar__logo">
-      <img src="./assets/logo.png" alt="logo H.R Front-end">
-    </div>
-    <div class="navbar__toggler">
-      <button></button>
+      <img src="./assets/logo.png" class="logo" alt="logo H.R Front-end">
     </div>
     <div class="navbar__items">
+      <input type="checkbox" id="check" class="check">
+      <label for="check" class="bar-btn">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul class="navbar-items_list">
         <li class="navbar__items">
           <a href="">About</a>
@@ -36,15 +38,15 @@
         <li class="navbar__items">
           <a href="">Blog</a>
         </li>
+        <li class="navbar__items">
+          <a href="" class="active">Contact</a>
+        </li>
       </ul>
-      <div class="navbar__cta">
-        <a href="" class="navbar__cta__enlace">Contact</a>
-      </div>
     </div>
   </nav>
   <header class="hero">
     <div class="intro">
-      <h1 id="typewriter"></h1>
+      <h1 id="typewriter" class="hero__title"></h1>
     </div>
     <div class="foto">
       <img src="./assets/perfil.png" alt="perfil">
@@ -57,11 +59,20 @@
         <img src="./assets/about-img.png" alt="about">
       </div>
       <div class="about__text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, officiis modi aliquid quod a in fugit asperiores ducimus? Aliquid facilis cupiditate vero quas ullam dolores alias fugiat qui, placeat ipsum.
-        Doloribus placeat exercitationem hic, non eum nisi beatae consectetur, vitae sunt magni libero laborum obcaecati delectus? Assumenda, est distinctio laudantium commodi dignissimos officia vero blanditiis ducimus doloribus. Cupiditate, perspiciatis dolores.
-        Ipsam consequuntur ipsa nostrum. Soluta, cumque! Placeat, laudantium tempora cumque tempore, omnis amet aliquam illo molestias ducimus enim quae mollitia esse consequatur ad cum praesentium quia, natus incidunt! Impedit, iste.
-        Ratione culpa quo earum rem pariatur beatae inventore sapiente ea. Voluptatem voluptates doloremque vero quae repellat nostrum cupiditate eveniet odit at. Eius, nam. Temporibus soluta autem omnis deleniti nesciunt corporis.
-        Molestiae a quisquam nihil inventore natus eligendi reiciendis, iusto consectetur voluptatibus non vitae, facilis magni, officia fugiat quibusdam? At cumque deleniti ducimus hic expedita illo ipsa temporibus molestiae illum excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, officiis modi aliquid quod a in fugit asperiores
+          ducimus? Aliquid facilis cupiditate vero quas ullam dolores alias fugiat qui, placeat ipsum.
+          Doloribus placeat exercitationem hic, non eum nisi beatae consectetur, vitae sunt magni libero laborum
+          obcaecati delectus? Assumenda, est distinctio laudantium commodi dignissimos officia vero blanditiis ducimus
+          doloribus. Cupiditate, perspiciatis dolores.
+          Ipsam consequuntur ipsa nostrum. Soluta, cumque! Placeat, laudantium tempora cumque tempore, omnis amet
+          aliquam illo molestias ducimus enim quae mollitia esse consequatur ad cum praesentium quia, natus incidunt!
+          Impedit, iste.
+          Ratione culpa quo earum rem pariatur beatae inventore sapiente ea. Voluptatem voluptates doloremque vero quae
+          repellat nostrum cupiditate eveniet odit at. Eius, nam. Temporibus soluta autem omnis deleniti nesciunt
+          corporis.
+          Molestiae a quisquam nihil inventore natus eligendi reiciendis, iusto consectetur voluptatibus non vitae,
+          facilis magni, officia fugiat quibusdam? At cumque deleniti ducimus hic expedita illo ipsa temporibus
+          molestiae illum excepturi.</p>
       </div>
     </div>
   </section>

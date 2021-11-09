@@ -1,25 +1,24 @@
-:root{
+:root {
   font-size: 16px;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   border: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   overflow-x: hidden;
   background: #fff;
   font-family: 'Roboto', sans-serif;
 }
 
 
-.navbar{
+.navbar {
   width: 100%;
-  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,57 +27,76 @@ body{
   overflow: hidden;
   position: fixed;
   top: 0;
-  right: 0; 
+  right: 0;
   left: 0;
   z-index: 2;
 }
 
-.navbar__items{
+.logo {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.bar-btn {
+  font-size: 25px;
+  color: #5A6D79;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+.navbar-items_list {
   display: flex;
+  position: fixed;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 0%;
+  top: 35px;
+  left: 0;
+  text-align: center;
+  background: rgba(90,109,121,1);
+  transition: all .5s;
 }
 
-.navbar-items_list{
-  display: flex;
-}
-
-.navbar__cta{
-  display: flex;
-}
-
-.navbar__items{
+.navbar__items {
+  display: block;
+  line-height: 30px;
+  margin: 50px 0px;
   list-style: none;
   padding-left: 1.5rem;
 }
 
-.navbar__items ul li a{
+.navbar__items ul li a {
+  font-size: 16px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #000;
-}
-
-.navbar__cta{
-  padding: 0 1.8rem 0 1.5rem;
-}
-
-.navbar__cta__enlace{
-  width: 160px;
-  height: 50px;
-  background: #5A6D79;
-  padding: 14px 49px;
+  font-weight: 600;
   color: #fff;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: transform 0.3s cubic-bezier(0.65, 0.39, 0.5, 1.63);
+  display: none;
 }
 
-.navbar__cta__enlace:hover{
+
+.navbar__cta__enlace:hover {
   background-color: #5a6d7978;
   box-shadow: 0 1px 13px 7px rgb(146 161 176 / 15%);
   transform: translateY(-4px);
 }
 
+.check {
+  display: none;
+}
 
-.hero{
+.check:checked~.navbar-items_list {
+  height: 100%;
+}
+
+.check:checked~.navbar-items_list a {
+  display: block;
+}
+
+
+.hero {
   width: 100%;
   height: auto;
   position: relative;
@@ -88,38 +106,119 @@ body{
   margin-top: 180px;
 }
 
-.intro{
+.intro {
   width: 549px;
 }
 
-.about{
+.hero__title {
+  font-size: 48px;
+}
+
+.about {
   margin-top: 7.5rem;
 }
 
-.about__title{
+.about__title {
   font-size: 48px;
   line-height: 55px;
   color: #9BD4D6;
   text-align: center;
 }
 
-.about__container{
+.about__container {
   display: flex;
   justify-content: space-around;
   margin-top: 4.5rem;
 }
 
-.about__img{
+.about__img {
   width: 550px;
   height: 350px;
 }
 
-.about__img img{
+.about__img img {
   width: 100%;
   height: 100%;
 }
 
-.about__text{
+.about__text {
   width: 485px;
 
+}
+
+/* ---------------------------------------------Media Query----------------------------------------------- */
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 50px;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .bar-btn {
+    display: none;
+  }
+
+  .navbar-items_list {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  .navbar__items {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 20px;
+    transition: none;
+  }
+
+  .navbar__items ul li a {
+    color: #000;
+    display: block;
+  }
+
+  /* clase para el cta en desktop */
+  .active {
+    background: #5A6D79;
+    padding: 0px 50px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  .navbar__items ul li a.active{
+    color: #fff;
+  }
+
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+  .navbar{
+    height: 50px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .about__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__text {
+    margin-top: 2rem;
+  }
 }
