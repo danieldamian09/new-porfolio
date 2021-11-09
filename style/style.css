@@ -228,6 +228,10 @@ body {
     width: 220px;
   }
 
+  .about{
+    margin-top: 13rem;
+  }
+
   .about__title{
     font-size: 2rem;
     line-height: 2.5rem;
