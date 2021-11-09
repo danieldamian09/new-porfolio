@@ -135,6 +135,8 @@ body {
 .about__img {
   width: 550px;
   height: 350px;
+  display: flex;
+  justify-content: center;
 }
 
 .about__img img {
@@ -242,6 +244,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 95%;
+    margin-top: 2.5rem;
   }
 
   .about__img{
@@ -261,6 +264,10 @@ body {
 
   .about__text p{
     font-size: 14px;
+  }
+
+  .works{
+    margin-top: 5rem;
   }
 }
 
